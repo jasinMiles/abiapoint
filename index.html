@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Abiapoint helps people discover local businesses and services across Abia State, Nigeria.">
+  <meta name="theme-color" content="#123b2c">
+  <title>Abiapoint — Find good things nearby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="Abiapoint home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>abia<span class="brand-point">point</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#explore">Explore</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <button class="button button-dark nav-cta" id="open-listing-top" type="button">Add a business <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#explore">Explore</a><a href="#how-it-works">How it works</a><a href="#about">About</a>
+      <button class="button button-dark" id="open-listing-mobile" type="button">Add a business ↗</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> MADE FOR ABIA, BY THE COMMUNITY</p>
+          <h1>Good businesses.<br><span>Closer to home.</span></h1>
+          <p class="hero-description">Discover trusted services, hidden gems and local businesses across Abia State — all in one place.</p>
+          <a class="hero-text-link" href="#explore">Explore local spots <span aria-hidden="true">↓</span></a>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>A</span><span>B</span><span>+</span></div>
+            <p><strong>Support local.</strong><br><span>Keep Abia growing.</span></p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of local shops and community">
+          <div class="art-card art-card-top"><span class="art-icon">✳</span><div><strong>Local finds</strong><small>Worth discovering</small></div></div>
+          <div class="town-scene">
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+            <div class="hill hill-back"></div><div class="hill hill-front"></div>
+            <div class="shop shop-left"><div class="shop-roof"></div><div class="shop-awning"><i></i><i></i><i></i><i></i></div><div class="shop-window"></div><div class="shop-door"></div></div>
+            <div class="shop shop-right"><div class="shop-roof"></div><div class="shop-awning"><i></i><i></i><i></i><i></i></div><div class="shop-window"></div><div class="shop-door"></div></div>
+            <div class="plant plant-one"><i></i><i></i><i></i></div><div class="plant plant-two"><i></i><i></i><i></i></div>
+            <div class="path"></div>
+          </div>
+          <div class="art-card art-card-bottom"><span class="pin-icon">⌖</span><div><strong>Across Abia State</strong><small>Aba · Umuahia · beyond</small></div></div>
+        </div>
+      </div>
+      <div class="container search-container">
+        <form class="search-panel" id="search-form" role="search">
+          <label class="search-field search-keyword">
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <span class="field-content"><span class="field-label">What are you looking for?</span><input id="search-input" type="search" placeholder="Try “tailor”, “food”, “repairs”…" autocomplete="off"></span>
+          </label>
+          <span class="search-divider" aria-hidden="true"></span>
+          <label class="search-field search-location">
+            <span class="search-symbol location-symbol" aria-hidden="true">⌖</span>
+            <span class="field-content"><span class="field-label">Where in Abia?</span>
+              <select id="location-filter" aria-label="Filter by location">
+                <option value="all">All locations</option><option>Aba</option><option>Umuahia</option><option>Ohafia</option><option>Arochukwu</option><option>Isiala Ngwa</option><option>Other Abia</option>
+              </select>
+            </span>
+          </label>
+          <button class="button button-green search-button" type="submit">Find businesses <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section directory-section" id="explore">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-muted">THE LOCAL DIRECTORY</p><h2>Find your next <span>favourite.</span></h2><p class="section-description">From everyday essentials to people with a special skill, start right here in Abia.</p></div>
+          <button class="button button-outline desktop-add" id="open-listing-mid" type="button">＋ List your business</button>
+        </div>
+        <div class="category-row" role="group" aria-label="Filter by business category" id="category-filters">
+          <button class="category-chip selected" data-category="All" type="button" aria-pressed="true"><span>✳</span> All businesses</button>
+          <button class="category-chip" data-category="Food & Drink" type="button" aria-pressed="false"><span>♨</span> Food & drink</button>
+          <button class="category-chip" data-category="Fashion" type="button" aria-pressed="false"><span>✂</span> Fashion</button>
+          <button class="category-chip" data-category="Home Services" type="button" aria-pressed="false"><span>⌂</span> Home services</button>
+          <button class="category-chip" data-category="Tech & Repairs" type="button" aria-pressed="false"><span>⌘</span> Tech & repairs</button>
+          <button class="category-chip" data-category="Health & Beauty" type="button" aria-pressed="false"><span>✿</span> Health & beauty</button>
+        </div>
+        <div class="results-bar"><p id="results-count" aria-live="polite">Showing local picks</p><label class="sort-label">Sort by <select id="sort-select"><option value="featured">Recommended</option><option value="name">Name A–Z</option></select></label></div>
+        <div class="business-grid" id="business-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-icon">⌕</span><h3>No matches just yet</h3><p>Try another search or choose a different category or location.</p><button class="button button-outline" id="clear-filters" type="button">Clear filters</button></div>
+        <div class="directory-footnote"><span class="footnote-icon">i</span><p><strong>Prototype note:</strong> These are sample listings for demonstration, not verified business recommendations.</p></div>
+      </div>
+    </section>
+
+    <section class="community-section" id="how-it-works">
+      <div class="container community-grid">
+        <div class="community-copy"><p class="eyebrow eyebrow-light">YOUR COMMUNITY, CONNECTED</p><h2>Abia has a lot to offer.<br><span>Let's make it easier to find.</span></h2><p>Abiapoint is a simple way to discover local services, support small businesses and help more people find what they need close to home.</p><button class="button button-cream" id="open-listing-bottom" type="button">Put your business on the map <span aria-hidden="true">↗</span></button></div>
+        <div class="community-stats"><div class="stat-card"><span class="stat-number">01</span><strong>Discover</strong><p>Find businesses by service and location.</p></div><div class="stat-card"><span class="stat-number">02</span><strong>Connect</strong><p>Explore useful details before you reach out.</p></div><div class="stat-card"><span class="stat-number">03</span><strong>Support</strong><p>Choose local and help the community thrive.</p></div></div>
+      </div>
+    </section>
+    <section class="about-strip" id="about"><div class="container about-inner"><div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>abia<span class="brand-point">point</span></span></div><p>Made with community in mind. <span>© 2026 Abiapoint concept</span></p><a href="#main">Back to top ↑</a></div></section>
+  </main>
+
+  <dialog class="listing-dialog" id="listing-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><div><p class="eyebrow eyebrow-muted">GROW WITH YOUR COMMUNITY</p><h2 id="dialog-title">Suggest a business</h2><p>Try adding a sample listing to see how Abiapoint works.</p></div><button class="close-dialog" id="close-dialog" type="button" aria-label="Close form">×</button></div>
+    <form id="listing-form" novalidate>
+      <div class="form-field"><label for="business-name">Business name <span>*</span></label><input id="business-name" name="businessName" required maxlength="70" placeholder="e.g. Ada's Kitchen"><small class="field-error" id="name-error"></small></div>
+      <div class="form-row"><div class="form-field"><label for="business-category">Category <span>*</span></label><select id="business-category" name="category" required><option value="">Choose category</option><option>Food & Drink</option><option>Fashion</option><option>Home Services</option><option>Tech & Repairs</option><option>Health & Beauty</option><option>Professional Services</option><option>Shopping</option></select><small class="field-error" id="category-error"></small></div>
+      <div class="form-field"><label for="business-location">Location <span>*</span></label><select id="business-location" name="location" required><option value="">Choose location</option><option>Aba</option><option>Umuahia</option><option>Ohafia</option><option>Arochukwu</option><option>Isiala Ngwa</option><option>Other Abia</option></select><small class="field-error" id="location-error"></small></div></div>
+      <div class="form-field"><label for="business-description">Short description <span>*</span></label><textarea id="business-description" name="description" rows="3" maxlength="180" required placeholder="What does this business offer?"></textarea><small class="field-error" id="description-error"></small></div>
+      <div class="form-field"><label for="business-contact">Contact detail <span class="optional">(optional)</span></label><input id="business-contact" name="contact" maxlength="80" placeholder="Phone, email or website"></div>
+      <p class="form-note">Demo only: entries are saved in this browser and are not sent to a directory administrator.</p>
+      <button class="button button-green form-submit" type="submit">Add to demo directory <span aria-hidden="true">→</span></button>
+      <p class="form-success" id="form-success" role="status" hidden></p>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
