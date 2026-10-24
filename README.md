@@ -61,15 +61,8 @@ See [`docs/feedback-and-issue-log.md`](docs/feedback-and-issue-log.md). Six init
 5. Responsive mobile navigation.
 6. Retry data loading after a fetch error.
 
-## Before submitting Week 2
 
-- [ ] Run via local server and test all states.
-- [ ] Review the issue log and update statuses based on tests actually performed.
-- [ ] Add screenshots captured from the running app (desktop and mobile) if requested.
-- [ ] Push the code to the public repository.
-- [ ] Create and push the `week-2` Git tag.
-- [ ] Submit the real repository/live URLs in the required BuildLab submission form.
 
 ## AI assistance disclosure
 
-ChatGPT assisted with drafting/refactoring and documentation. Review, understand, and test the submitted code, and disclose assistance according to BuildLab's rules.
+ChatGPT assisted with styling and review
