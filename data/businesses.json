@@ -1,0 +1,103 @@
+{
+  "businesses": [
+    {
+      "id": "demo-1",
+      "name": "Ada's Kitchen",
+      "category": "Food & Drink",
+      "location": "Umuahia",
+      "description": "A sample listing for home-style meals, soups and lunch packs.",
+      "contact": "",
+      "icon": "🍲",
+      "featured": true,
+      "sample": true
+    },
+    {
+      "id": "demo-2",
+      "name": "Thread & Needle Studio",
+      "category": "Fashion",
+      "location": "Aba",
+      "description": "A sample tailoring studio for alterations and made-to-measure outfits.",
+      "contact": "",
+      "icon": "🧵",
+      "featured": true,
+      "sample": true
+    },
+    {
+      "id": "demo-3",
+      "name": "BrightFix Home Care",
+      "category": "Home Services",
+      "location": "Umuahia",
+      "description": "A sample home-services listing for basic maintenance and repairs.",
+      "contact": "",
+      "icon": "🪴",
+      "featured": true,
+      "sample": true
+    },
+    {
+      "id": "demo-4",
+      "name": "CircuitCare Repairs",
+      "category": "Tech & Repairs",
+      "location": "Aba",
+      "description": "A sample device-support listing for phones and everyday electronics.",
+      "contact": "",
+      "icon": "🔧",
+      "featured": true,
+      "sample": true
+    },
+    {
+      "id": "demo-5",
+      "name": "Glow Corner Studio",
+      "category": "Health & Beauty",
+      "location": "Ohafia",
+      "description": "A sample beauty listing for grooming, styling and self-care services.",
+      "contact": "",
+      "icon": "✿",
+      "featured": false,
+      "sample": true
+    },
+    {
+      "id": "demo-6",
+      "name": "Umuahia Creative Desk",
+      "category": "Professional Services",
+      "location": "Umuahia",
+      "description": "A sample creative service listing for flyers, branding and design.",
+      "contact": "",
+      "icon": "✦",
+      "featured": false,
+      "sample": true
+    },
+    {
+      "id": "demo-7",
+      "name": "Market Basket Supplies",
+      "category": "Shopping",
+      "location": "Isiala Ngwa",
+      "description": "A sample local shopping listing for household and everyday essentials.",
+      "contact": "",
+      "icon": "🧺",
+      "featured": false,
+      "sample": true
+    },
+    {
+      "id": "demo-8",
+      "name": "Fresh Pot Express",
+      "category": "Food & Drink",
+      "location": "Aba",
+      "description": "A sample food listing for quick meals and take-away orders.",
+      "contact": "",
+      "icon": "🥘",
+      "featured": false,
+      "sample": true
+    },
+    {
+      "id": "demo-9",
+      "name": "Ohafia Style House",
+      "category": "Fashion",
+      "location": "Ohafia",
+      "description": "A sample fashion listing for clothing, accessories and alterations.",
+      "contact": "",
+      "icon": "👗",
+      "featured": false,
+      "sample": true
+    }
+  ]
+}
