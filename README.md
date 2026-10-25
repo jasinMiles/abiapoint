@@ -66,3 +66,4 @@ See [`docs/feedback-and-issue-log.md`](docs/feedback-and-issue-log.md). Six init
 ## AI assistance disclosure
 
 ChatGPT assisted with styling and review
+claude assisted with documentation 
